@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Electric Charging Stations in Charente</title>
+
+        <link rel="stylesheet" href="css/styles.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+        
+        <script src="js/graph1.js" defer></script>
+        <script src="js/graph2.js" defer></script>
+        <script src="js/animation.js"></script>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="logo-container">
+                <a href="#"><img src="images/logo.svg" alt="Logo" class="logo" /></a>
+            </div>
+        </header>
+
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="#"><img src="/images/logo_responsive.svg" alt="Logo" class="nav-logo-img" /></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#lede" class="nav-item-lede">Lede</a></li>
+                <li><a href="#installations">Installations</a></li>
+                <li><a href="#growth">EV Growth</a></li>
+                <li><a href="#evolution">Charging Evolution</a></li>
+                <li><a href="#conclusion">Future Needs</a></li>
+            </ul>
+        </nav>
+
+        <div class="pageNewYork">
+            <div class="ledeContainer" id="lede">
+                <div class="titreLede">
+                    <h1>Towards The Future: Electric Vehicles and <br> Charging Stations in Charente</h1>
+                </div>
+                <div class="textLede">In recent years, the world has shifted toward more environmentally friendly technologies, and the Charente region is following suit. As electric vehicles (EVs) become more common, an important question arises: is the local infrastructure developing fast enough to meet this demand? In Charente, where the number of electric vehicles and charging stations is on the rise, data shows progress but also highlights challenges that need to be addressed.</div>
+            </div>
+
+            <div class="barreContainer" id="installations">
+                <div class="titreBarre">
+                    <div class="titre"><h3>POWERING UP CHARENTE :</h3></div>
+                    <div class="sousTitre"><h4>ANNUAL ELECTRIC CHARGING <br> STATION INSTALLATIONS</h4></div>
+                </div>
+                <svg id="svgBarre"></svg>
+            </div>
+
+
+            <div class="growthContainer" id="growth">
+                <div class="titre">
+                    <h2>The Growth of Electric Vehicles</h2>
+                </div>
+                <div class="textArticle">
+                    From 2020 to 2023, the number of electric vehicles in Charente has steadily increased. 
+                    <span class="surligner">By the end of 2023, <span class="highlightable">24,531 electric cars were registered in the region,</span></span> 
+                    representing 1.59% of all cars on the road. Although this percentage is still modest, it marks a rising trend, putting increased pressure on the local charging infrastructure.
+                </div>
+            </div>
+            
+            <div class="evolutionContainer" id="evolution">
+                <div class="titre"><h2>Charging Stations: Rapid Evolution but Is It Enough?</h2></div>
+                <div class="textArticle">
+                    Charente has made significant progress in developing its network of charging stations. In 2023, 86 charging stations were in operation, representing an impressive 231% increase compared to the previous year. However, to meet future needs, the region must maintain this momentum. Based on our estimates, which rely on an average annual growth rate of 65%, <span class="surligner"><span class="highlightable">Charente may need around 17,057 charging stations by 2030</span></span>, posing a considerable challenge for local authorities.
+                </div>
+                <button id="btnStat">See the statistics</button>
+            </div>
+            
+
+            <div class="graphTaux">
+                <svg id="svgTaux"></svg>
+            </div>
+
+
+            <div class="conclusionContainer" id="conclusion">
+                <div class="leftContainer">
+                    <div class="titre"><h2>Meeting Future Needs</h2></div>
+                    <div class="textArticle">While the expansion of the charging network in 2023 is encouraging, the pace of installation in 2024 may slow down. Nevertheless, if the region wants to reach 17,057 stations by 2030, it is crucial to accelerate efforts. Authorities will need to continue investments and planning to ensure that the charging infrastructure can meet growing demand.</div>
+                    <button class="btnPlus" id="btnPlus">+</button>
+                </div>
+                <div class="separator"></div>
+                <div class="rightContainer">
+                    <div class="textArticle">In conclusion, the future of Charente in terms of electric mobility is promising but requires ongoing attention. With rigorous planning and sustained investments, the region has the opportunity to maintain its transition towards a greener future and support the growth of electric vehicles.</div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footerSeparator">
+                <div class="footer-lines"></div>
+                <div class="footer-lines"></div>
+            </div>
+            <div class="footer-logo">
+                <img src="images/logo_responsive.svg" alt="Logo" />
+            </div>
+        </footer>    
+    </body>
+</html>
