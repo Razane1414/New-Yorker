@@ -1,0 +1,291 @@
+@font-face {
+  font-family: 'timesNewRoman';
+  src: url('../Fonts/TimesNewRoman/timesNewRoman.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;   
+}
+
+@font-face {
+  font-family: 'timesNewRoman';
+  src: url('../Fonts/TimesNewRoman/timesNewRomanBold.ttf') format('truetype');
+  font-weight: bold;   
+  font-style: normal;  
+}
+
+
+
+/* STYLE GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  list-style-type: none; 
+}
+
+
+body {
+  font-family: 'timesNewRoman', sans-serif;  /* Utilisation de la police par défaut */
+  line-height: 1.6;
+  color: black; /* Couleur du texte */
+}
+
+
+
+.header {
+  text-align: center; /* Centre le logo */
+  padding-top: 20px; 
+}
+.header .logo-container{
+  border-bottom: 0.5px solid rgb(200, 198, 198); ;
+}
+
+.logo {
+  max-width: 300px; 
+  width: 100%;
+  height: auto; 
+}
+
+
+/* Style pour la navbar avec sticky */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: white;
+  width: 100%;
+  position: -webkit-sticky; 
+  position: sticky;         /* Pour les autres navigateurs */
+  top: 0;                   /* Devient fixe une fois qu'elle atteint le haut de la page */
+  z-index: 1000;           
+}
+
+
+.nav-logo-img {
+  max-width: 20px; 
+}
+
+
+.nav-item-lede {
+  border-right: 0.5px solid rgb(200, 198, 198);
+  padding-right: 15px;
+  font-weight: bold;
+  margin-right: 15px; 
+  border-right: 0.5px solid rgb(200, 198, 198); 
+
+}
+
+.nav-links li {
+  font-family: 'Roboto', sans-serif;
+  margin: 0 15px; 
+}
+
+.nav-links {
+  display: flex; 
+  justify-content: center; /* Centre les liens horizontalement */
+  flex-grow: 1; /* Permet à la liste de prendre tout l'espace restant */
+
+}
+
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links a:hover {
+  text-decoration: underline; /* Ajoute le soulignement */
+  text-decoration-color: rgb(34, 34, 34); 
+  text-decoration-thickness: 0.5px;
+  text-underline-offset: 3px; /* Espace entre le texte et le soulignement */
+}
+
+/*  */
+.pageNewYork {
+  margin: 10% 25%; 
+}
+
+.ledeContainer {
+  padding: 5% 0; /* Ajoute un padding de 5% en haut et en bas, 0 à gauche et à droite */
+  border-bottom: 0.5px solid rgb(200, 198, 198) ;
+}
+
+
+.titreLede h1 {
+  font-size: 2.5em; 
+  margin-bottom: 10%; 
+}
+
+.textLede {
+  font-size: 1.2em;
+  line-height: 1.6; /* Ajoute de l'espacement entre les lignes pour rendre le texte plus lisible */
+}
+
+
+/*  */
+.barreContainer {
+  margin: 50px 0; 
+}
+
+.barreContainer, .titreBarre {
+  text-align: center; 
+}
+
+#svgBarre {
+  width: 100%;  
+  height: 400px; 
+  max-width: 800px; 
+  margin: 80px auto; 
+}
+
+/*  */
+.titre h2 {
+  margin-bottom: 25px; 
+}
+
+.growthContainer {
+  margin: 60px 0;
+}
+
+.surligner {
+  position: relative; /* Nécessaire pour que le surlignage soit positionné correctement */
+  display: inline-block; /* Permet au surlignage d'être aussi large que le texte */
+}
+
+.highlightable {
+  position: relative; /* Nécessaire pour que le surlignage soit positionné correctement */
+  display: inline-block; /* Permet au surlignage d'être aussi large que le texte */
+}
+
+.highlight {
+  position: absolute; /* Positionnement pour le surlignage */
+  top: 0; /* Aligner le rectangle en haut du texte */
+  left: 0; /* Commencer à gauche */
+  width: 0; /* Commencer avec une largeur de 0 pour l'animation */
+  height: 100%; /* Couvrir toute la hauteur du texte */
+  background-color: yellow; /* Couleur solide pour le surlignage */
+  z-index: -1; /* En dessous du texte */
+}
+
+
+
+
+#btnStat {
+  margin-top: 70px;
+  border: 2px solid black;
+  background-color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Roboto', sans-serif; /* Applique la police Roboto */
+  font-weight: 400; /* Utilise la version normale de la police */
+}
+
+#btnStat:hover {
+  background-color: #f0f0f0;
+}
+
+.graphTaux {
+  display: flex;               
+  justify-content: center;      /* Centre horizontalement */
+  margin: 50px 0;             
+}
+
+#svgTaux {
+  width: 100%;            
+  height: 500px;               
+}
+
+
+/*  */
+.conclusionContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 200px 0;
+}
+
+.leftContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.rightContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Style pour la ligne de séparation */
+.separator {
+  width: 1px;
+  background-color: rgb(171, 171, 171);
+  height: auto;
+  margin-left: 130px;
+  margin-right:50px;
+
+  align-self: stretch;
+}
+
+.btnPlus {
+  margin-top: 10%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  background-color: white;
+  padding: 0;
+  font-size: 24px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.btnPlus:hover {
+  background-color: #f0f0f0;   
+}
+
+
+/* footer *//* footer */
+footer {
+  display: flex;                         
+  flex-direction: column;                
+  align-items: center;                  
+  justify-content: center;               /* Centre le contenu verticalement */
+  margin: 300px auto 20px;           
+  width: 90%;                           
+  text-align: center;                   
+}
+
+.footerSeparator {
+  display: flex;                         
+  flex-direction: column;               
+  align-items: center;                  
+  justify-content: center;               /* Centre le contenu horizontalement */
+  width: 100%;                          
+  margin-bottom: 10px;                 
+}
+
+.footer-lines {
+  width: 100%;                          
+  height: 0;                           
+  border-top: 0.5px solid rgb(200, 198, 198); 
+  margin: 5px 0;                       
+}
+
+.footer-logo {
+  display: flex;                        
+  justify-content: center;              
+  width: 100%;                         
+}
+
+.footer-logo img {
+  width: 30px;                        
+  height: auto;                       
+  margin: 5px;                         /* Ajoute des marges autour de l'image */
+}

@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 201.29 172.89">
+    <defs>
+        <style>
+            .text-small-white,
+            .text-small-blue {
+                font-size: 2.5px;
+            }
+            .text-small-white,
+            .circle-white,
+            .text-medium-white {
+                fill: #fff;
+            }
+            .text-small-white,
+            .text-small-blue,
+            .text-medium-white {
+                font-family: ClashDisplay-Medium, Clash Display;
+                font-weight: 500;
+            }
+            .text-small-blue,
+            .circle-blue {
+                fill: #a4c2ff;
+            }
+            .line-blue,
+            .line-white,
+            .grid-line {
+                fill: none;
+                stroke-linecap: round;
+                stroke-miterlimit: 10;
+            }
+            .line-blue {
+                stroke: #a4c2ff;
+            }
+            .line-blue,
+            .line-white {
+                stroke-width: 0.5px;
+            }
+            .line-white,
+            .grid-line {
+                stroke: #fff;
+            }
+            .text-medium-white {
+                font-size: 4.4px;
+            }
+            .grid-line {
+                opacity: 0.21;
+            }
+        </style>
+    </defs>
+    <title>graph taux</title>
+    <g id="Calque_2" data-name="Calque 2">
+        <g id="Background">
+            <rect width="201.29" height="172.89" rx="23.73"/>
+        </g>
+        <g id="Vehicle_Percentages" data-name="Vehicle Percentages">
+            <text class="text-small-white" transform="translate(41.03 41.11)">482 %</text>
+            <text class="text-small-white" transform="translate(82.1 136.9)">57 %</text>
+            <text class="text-small-white" transform="translate(120.76 141.42)">40%</text>
+            <text class="text-small-white" transform="translate(160.1 139.98)">49%</text>
+        </g>
+        <g id="ChargingStation_Percentages" data-name="Charging Station Percentages">
+            <text class="text-small-blue" transform="translate(81.61 143.56)">35 %</text>
+            <text class="text-small-blue" transform="translate(121.36 134.57)">71%</text>
+            <text class="text-small-blue" transform="translate(160.1 132.7)">89%</text>
+            <text class="text-small-blue" transform="translate(42.21 93.05)">231 %</text>
+        </g>
+        <g id="ChargingStation_Circles" data-name="Charging Station Circles">
+            <circle class="circle-blue" cx="45.23" cy="95.58" r="1.38"/>
+            <circle class="circle-blue" cx="83.48" cy="139.66" r="1.38"/>
+            <circle class="circle-blue" cx="122.61" cy="130.39" r="1.38"/>
+            <circle class="circle-blue" cx="161.82" cy="128.48" r="1.38"/>
+        </g>
+        <g id="Vehicle_Circles" data-name="Vehicle Circles">
+            <circle class="circle-white" cx="44.68" cy="43.61" r="1.38"/>
+            <circle class="circle-white" cx="83.48" cy="132.72" r="1.38"/>
+            <circle class="circle-white" cx="122.61" cy="137.25" r="1.38"/>
+            <circle class="circle-white" cx="161.82" cy="135.78" r="1.38"/>
+        </g>
+        <g id="ChargingStation_Curve" data-name="Charging Station Curve">
+            <polyline class="line-blue" points="45.23 95.58 82.83 139.66 122.61 130.39 161.82 128.48"/>
+        </g>
+        <g id="Vehicle_Curve" data-name="Vehicle Curve">
+            <polyline class="line-white" points="44.41 43.61 83.48 132.72 122.81 137.59 161.82 135.78"/>
+        </g>
+        <g id="Year_Labels">
+            <text class="text-medium-white" transform="translate(31.03 154.23)">2020/2021</text>
+            <text class="text-medium-white" transform="translate(69.23 154.23)">2021/2022</text>
+            <text class="text-medium-white" transform="translate(107.42 154.23)">2022/2023</text>
+            <text class="text-medium-white" transform="translate(146.81 154.23)">2023/2024</text>
+        </g>
+        <g id="Rate_Labels">
+            <text class="text-medium-white" transform="translate(18.06 148.21)">0</text>
+            <text class="text-medium-white" transform="translate(13.52 126.25)">100</text>
+            <text class="text-medium-white" transform="translate(12.22 103.94)">200</text>
+            <text class="text-medium-white" transform="translate(12.12 81.94)">300</text>
+            <text class="text-medium-white" transform="translate(11.94 59.72)">400</text>
+            <text class="text-medium-white" transform="translate(12.06 37.65)">500</text>
+        </g>
+        <g id="Grid_Lines" data-name="Grid Lines">
+            <line class="grid-line" x1="24.52" y1="146.85" x2="185.03" y2="146.85"/>
+            <line class="grid-line" x1="24.52" y1="124.76" x2="185.03" y2="124.76"/>
+            <line class="grid-line" x1="24.52" y1="102.66" x2="185.03" y2="102.66"/>
+            <line class="grid-line" x1="24.52" y1="80.57" x2="185.03" y2="80.57"/>
+            <line class="grid-line" x1="24.52" y1="58.47" x2="185.03" y2="58.47"/>
+            <line class="grid-line" x1="24.51" y1="36.38" x2="185.03" y2="36.38"/>
+        </g>
+        <g id="Legend_ChargingStation" data-name="Legend Charging Station">
+            <rect class="circle-blue" x="115.77" y="20.84" width="4.06" height="5.45" rx="2.03"/>
+            <text class="text-medium-white" transform="translate(121.06 25.13)">Charging station growth rate</text>
+        </g>
+        <g id="Legend_Vehicle" data-name="Legend Vehicle">
+            <rect class="circle-white" x="24.03" y="20.84" width="4.06" height="5.45" rx="2.03"/>
+            <text class="text-medium-white" transform="translate(29.32 25.13)">Electric vehicle growth rate</text>
+        </g>
+    </g>
+</svg>
